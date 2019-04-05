@@ -74,7 +74,7 @@ export default {
   name: "layout",
   data() {
     return {
-      isOpen: true
+      isOpen: null
     };
   },
   computed: {

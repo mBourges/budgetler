@@ -1,11 +1,9 @@
 <template>
-  <div>
-    <h3>Settings</h3>
-  </div>
+  <div class="home"></div>
 </template>
 
 <script>
 export default {
-  name: "settings"
+  name: "dashboard"
 };
 </script>

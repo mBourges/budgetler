@@ -3,10 +3,10 @@ import Router from "vue-router";
 import firebase from "firebase/app";
 import "firebase/auth";
 
-import Layout from "./views/layout.vue";
-import Dashboard from "./views/dashboard.vue";
-import Login from "./views/login.vue";
-import SignUp from "./views/signUp.vue";
+import Layout from "./layouts/layout.vue";
+import Dashboard from "./pages/dashboard.vue";
+import Login from "./pages/login.vue";
+import SignUp from "./pages/signUp.vue";
 
 Vue.use(Router);
 
@@ -37,7 +37,7 @@ const router = new Router({
           path: "accounts",
           name: "accounts",
           component: () =>
-            import(/* webpackChunkName: "accounts" */ "./views/accounts.vue"),
+            import(/* webpackChunkName: "accounts" */ "./pages/accounts.vue"),
           meta: {
             requireAuth: true
           }
@@ -46,7 +46,7 @@ const router = new Router({
           path: "transactions",
           name: "transactions",
           component: () =>
-            import(/* webpackChunkName: "transactions" */ "./views/transactions.vue"),
+            import(/* webpackChunkName: "transactions" */ "./pages/transactions.vue"),
           meta: {
             requireAuth: true
           }
@@ -55,7 +55,7 @@ const router = new Router({
           path: "budget",
           name: "budget",
           component: () =>
-            import(/* webpackChunkName: "budget" */ "./views/budget.vue"),
+            import(/* webpackChunkName: "budget" */ "./pages/budget.vue"),
           meta: {
             requireAuth: true
           }
@@ -64,7 +64,7 @@ const router = new Router({
           path: "settings",
           name: "settings",
           component: () =>
-            import(/* webpackChunkName: "settings" */ "./views/settings.vue"),
+            import(/* webpackChunkName: "settings" */ "./pages/settings.vue"),
           meta: {
             requireAuth: true
           }
@@ -73,7 +73,7 @@ const router = new Router({
           path: "addTransaction",
           name: "addTransaction",
           component: () =>
-            import(/* webpackChunkName: "settings" */ "./views/addTransaction.vue"),
+            import(/* webpackChunkName: "settings" */ "./pages/addTransaction.vue"),
           meta: {
             requireAuth: true
           }
